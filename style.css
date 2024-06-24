@@ -1,5 +1,6 @@
+/* General styles */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -7,6 +8,18 @@ body {
     color: #333;
 }
 
+a {
+    color: #1a73e8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Header styles */
 header {
     background: #222;
     color: #fff;
@@ -27,6 +40,118 @@ header p {
     font-weight: 300;
 }
 
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.navbar .logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar .nav-links li a {
+    font-size: 1rem;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .nav-links li a:hover {
+    background-color: #444;
+}
+
+/* Profile section styles */
+.profile {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.profile .name {
+    font-size: 2.5rem;
+    margin: 0.5rem 0;
+    font-weight: 700;
+}
+
+.profile .title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #888;
+}
+
+.profile .subtitle {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.profile .cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile .btn {
+    background-color: #1a73e8;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.profile .btn:hover {
+    background-color: #0056b3;
+}
+
+.profile .btn.video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+}
+
+.profile .btn.video i {
+    margin: 0;
+}
+
+.profile .social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile .social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.profile .social-links a:hover {
+    color: #1a73e8;
+}
+
+/* Section styles */
 section {
     padding: 2rem;
     background: #fff;
@@ -42,6 +167,12 @@ h2 {
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
     color: #444;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #666;
 }
 
 ul {
@@ -74,13 +205,28 @@ blockquote footer {
     color: #555;
 }
 
-a {
-    color: #1a73e8;
-    text-decoration: none;
-    transition: color 0.3s ease;
+/* Portfolio item styles */
+.portfolio-item {
+    margin-bottom: 1.5rem;
 }
 
-a:hover {
-    color: #0056b3;
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Contact section styles */
+#contact p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#contact a {
+    color: #1a73e8;
     text-decoration: underline;
 }
